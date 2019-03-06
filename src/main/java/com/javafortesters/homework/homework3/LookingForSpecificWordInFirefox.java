@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class LookingForSpecificWordInFirefox {
     public static void main(String[] args) {
-        System.setProperty("webdriver.gecko.driver", "C:\\List_of_jar\\geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver", "drivers/geckodriver.exe");
 
         WebDriver driver = new FirefoxDriver();
         driver.get("https://www.google.com");
