@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="WUGLoginTest">
+<suite name="WUGLoginTest" parallel="methods" thread-count="4">
 
-    <test name="WUGLogin">
+    <test name="WUGLogin" group-by-instances="true">
         <classes>
-            <class name="com.javafortesters.homework.WUGLoginTest" />
+            <class name="com.javafortesters.homework.WUGLoginTest">
+            </class>
         </classes>
     </test>
 </suite>
+
